@@ -1,0 +1,857 @@
+/* ----------------------------------------------
+    Theme Name: Trader's Onepage Agency Template
+    Author: Rathin Barmon
+    Version: 1.0
+    Tags: One Page, Agency Template, Business Template, Creative
+--------------------------------------------------- */
+/* ---------------------------------------------
+    [Table of contents]
+
+    1. General CSS
+    2. Preloader CSS / .preloader
+    3. Navigation
+    4. Slider Area
+    5. Introducing
+    6. Services    
+    7. Our Team
+    8. Project
+    9. Blog Area 
+    10. Brand
+    11. Scroll to  top
+    12. Footer 
+-----------------------------------------------------*/
+/*----------------------------------------------------
+[ Color codes ]
+    main-color:         #F9690E (Safety Orange)      [ This is the main color in Template ]
+    menu-color:         #F9690E (Safety Orange)      [ This is the main menu color in Template ]
+    Background:         #ffffff (White)              [ Background color ] 
+    Text-color-2:       #000;                        [ using text color and some ware ]
+    border-color:       #dddddd;                     [ Using border color ]
+
+[ Using Color Code ]
+    h1 [ All ]      Color: #000                     [ Black ]
+    h2 [ All ]      Color: #000                     [ Black ]
+    p  [ Dark ]     Color: #000                     [ Black ] 
+    a  [ Normal ]   Color: main-color               
+
+----------------------------------------------------------*/
+/*--------------------------------------------------------
+[Typography]
+
+Body : 
+    font-family:    'Open Sans', sans-serif;
+    font-size:      14px;
+
+Header:
+    font-family:    "Open Sans", sans-serif;
+    font-size:      40px;
+
+Section Title:
+    font-family:    "Open Sans", sans-serif;
+    font-size:      28px;
+
+p:  
+    font-family:    'Open Sans', sans-serif;
+    font-size:      14px;
+
+
+Notes:  This Template Defult [ font-family: 'Open Sans', sans-serif; ] [ font-size: 14px; ]
+
+-----------------------------------------------------------*/
+/*================================
+1. General CSS 
+==================================*/ 
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #000;
+    background-color: #fff;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,span ,p{
+    margin: 0 0 10px;
+    font-weight: 700; 
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none !important;
+    color: #333;
+}
+section {
+    padding: 110px 0px 50px 0px;
+}
+a {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-decoration: none
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+}
+.section-title {
+    position: relative;
+}
+.section-title h4 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin: 0px;
+}
+.section-title span {
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+    bottom: -25px;
+    left: 0px;
+}
+.styled-title {
+    font-style: italic;
+}
+.styled-title h2 {
+    font-size: 32px;
+    color: #000;
+    font-weight: normal;
+    margin: 0px;
+}
+.rotate {
+    transform: rotate(270deg);
+    margin-top: 75px;
+}
+/*================================
+End General CSS 
+==================================*/
+/*================================
+2. Preloader
+==================================*/
+.preloader-wrap {
+    background-color: #eeeeee;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+.preloader-spinner {
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    -webkit-animation: zion-rotate 2.0s infinite linear;
+    animation: zion-rotate 2.0s infinite linear;
+}
+.preloader-dot1,
+.preloader-dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #F9690E;
+    border-radius: 100%;
+    -webkit-animation: zion-bounce 2.0s infinite ease-in-out;
+    animation: zion-bounce 2.0s infinite ease-in-out;
+}
+.preloader-dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+@-webkit-keyframes zion-rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+@keyframes zion-rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
+@-webkit-keyframes zion-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+@keyframes zion-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+/*================================
+End Preloader CSS 
+==================================*/
+/*================================
+3. Navigation
+==================================*/ 
+.main-menu-area {
+    border-bottom: 1px solid #F97544;
+}
+.logo-area {
+    text-align: center;
+    padding-top: 9px;
+}
+#nav {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.logo-area a {
+    text-decoration: none;
+}
+.logo-area h2 a {
+    text-decoration: none;
+    color: #f9690e;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 34px;
+}
+.mobile-menu-area {
+    display: none;
+}
+.main-menu {
+    float: right;
+    padding: 2px 0px;
+}
+.main-menu ul {
+    padding-right: 0px;
+    list-style: none;
+}
+.main-menu ul li {
+    float: left;
+}
+.current a {
+    color: #f9690e !important;
+}
+.main-menu ul > li > a {
+    color: #303030;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    text-decoration: none;
+}
+.current_page_item a {
+    color: #f9690e !important;
+}
+.main-menu ul li.active a,
+.main-menu ul li:hover a {
+    color: #f9690e;
+}
+.sticky {
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    box-shadow: 0px 3px 3px rgba(50, 50, 50, 0.5);
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+    border: 0px;
+}
+.sticky.main-menu-area {
+    padding: 8px 0;
+    width: 100%;
+}
+.mean-container .mean-bar::after {
+    color: #F9690E !important;
+    content: "MENU";
+    font-size: 21px;
+    left: 5%;
+    position: absolute;
+    top: 12px;
+}
+.meanmenu-reveal {
+    color: #F9690E !important;
+}
+.mean-container a.meanmenu-reveal span {
+    background: #F9690E !important;
+}
+.mean-container .mean-nav ul li a:hover {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #F9690E;
+}
+/*================================
+End Navigation
+==================================*/
+/*================================
+4.Slider Area
+==================================*/ 
+.slider-area {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #F97544;
+}
+.slider-image-area {
+    position: relative;
+    background: url("../../images/banner/1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+}
+.slider-image-area::after,
+.slider-image-area::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    left: 0px;
+    bottom: -185px;
+    transform: skewy(15deg);
+    z-index: 99
+}
+.slider-image-area::before {
+    transform: skewy(-15deg) !important;
+}
+.slider-content-area {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.slider-table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+.slider-table-cell h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.slider-table-cell h4 {
+    font-style: italic;
+    font-size: 20px;
+    margin: 0px;
+}
+.slider-table-cell p{ 
+    margin: 0px auto;
+    width: 80%;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+.scroll-down-icon {
+    text-align: center;
+    position: absolute;
+    left: 0px !important;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+}
+.scroll-down-icon a i {
+    width: 50px;
+    height: 40px;
+    line-height: 52px;
+    text-decoration: none;
+    color: #F9690E;
+    font-size: 18px;
+}
+/*================================
+End Slider
+==================================*/
+/*================================
+5.Introducing
+==================================*/ 
+.introducing-area {} 
+.introducing-content {
+    padding: 50px 0px;
+}
+.introducing-content h2 {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 32px;
+    margin: 0px;
+    text-transform: capitalize;
+}
+.introducing-content p {
+    padding: 15px 0px;
+    margin-bottom: 0px;
+    font-weight: normal; 
+}
+.read-more-btn {
+    text-align: right;
+    padding-right: 30px;
+}
+.read-more-btn a {
+    text-decoration: underline;
+    color: #000;
+    text-transform: uppercase;
+}
+.first-image {
+    position: relative;
+    width: 100%;
+    padding: 0px 55px 0px 0px;
+}
+.second-image {
+    position: absolute;
+    bottom: -100px;
+    left: 150px;
+    padding: 0px 50px 0px 0px;
+}
+.first-image img {
+    position: relative;
+    width: 400px;
+    height: 250px;
+}
+.second-image img {
+    width: 400px;
+    height: 250px;
+}
+/*================================
+End Introducing
+==================================*/
+/*================================
+6.Services
+==================================*/ 
+.our-services-area {
+    background: #ddd;
+    margin-top: 80px;
+}
+.our-services-content {
+    padding: 10px 0px;
+}
+.our-services-content h2 {
+    padding: 15px 0px;
+    font-style: italic;
+}
+.our-services-content h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    padding: 10px 0px;
+    padding-left: 50px;
+    margin: 0px;
+    color: #000;
+}
+.our-services-content h4::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    height: 2px;
+    width: 40px;
+    background: #000;
+}
+.our-services-content {
+    padding: 50px 0px;
+}
+.our-services-content h2 {
+    padding: 20px 0px;
+    font-style: italic;
+    margin: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.our-services-content p {
+    padding-left: 50px !important;
+    padding: 10px;
+    margin: 0px;
+    font-weight: normal;
+    color: #000;
+}
+.our-services-content ul {
+    padding: 0px !important;
+    list-style: none;
+    margin-top: 5px;
+}
+.our-services-content ul li {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px 0px;
+    color: #000;
+}
+.our-services-images img {
+    width: auto;
+    margin: 0px auto;
+    padding: 0px;
+    height: 500px;
+}
+/*================================
+End Services
+==================================*/
+/*================================
+7. Our Team
+==================================*/ 
+.team-bg1 {
+    background-image: url(../../images/team/1.jpg);
+}
+.team-bg2 {
+    background-image: url(../../images/team/2.jpg);
+}
+.team-bg3 {
+    background-image: url(../../images/team/3.jpg);
+}
+.team-bg {
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 25px;
+}
+.border-content {
+    border: 1px solid #ddd;
+    text-align: center; 
+    text-transform: uppercase; 
+    padding-bottom: 20px;
+}
+.border-content h4 {
+    font-size: 18px; 
+    background-color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0px; 
+    font-weight: normal;
+}
+.border-content p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    margin: 0px;
+    padding-top: 6px;
+}
+.author-name {
+    margin-top: -10px;
+}
+.top-100 {
+    margin-top: 100px;
+}
+/*================================
+ End Our Team
+==================================*/
+/*================================
+8. Project Slide
+==================================*/ 
+.our-projects-area {
+    background: #F1F1F1;
+}
+.our-pro-active {
+    padding: 60px 0px;
+}
+.our-project-left h4 {
+    font-style: italic;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0px;
+    font-weight: normal;
+}
+.our-project-left img {
+    height: 550px;
+}
+.our-project-right img {
+    height: 550px;
+}
+.our-pro-active .owl-nav {
+    position: absolute;
+    right: 14px;
+    bottom: 60px;
+    font-size: 25px;
+    color: #fff;
+}
+.our-pro-active .owl-nav div {
+    display: inline-block;
+	-webkit-transition: all .3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    text-align: center;
+    line-height: 42px;
+}
+.our-pro-active .owl-nav div:hover {
+    background: #000;
+    color: #fff;
+}
+/*================================
+End Project Slide
+==================================*/
+/*================================
+9.Blog Area
+==================================*/ 
+.blog-area {
+    background: #ddd;
+}
+.blog-sepecial-title {
+    padding-top: 5px;
+}
+.blog-sepecial-area {
+    padding-bottom: 50px;
+}
+.single-blog {
+    background: #fff;
+}
+.single-blog-content {
+    padding: 15px;
+    position: relative;
+}
+.absolute-icon {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+.absolute-icon i {
+    color: #F9690E;
+    font-size: 18px;
+    line-height: 42px;
+}
+.single-blog-content h4 {
+    padding-bottom: 15px;
+    margin: 0px;
+}
+.single-blog-content h4 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+}
+.single-blog-content span {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: normal;
+}
+.single-blog-content p {
+    padding: 15px 0px;
+    margin: 0px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+}
+.blog-read-more {
+    text-align: right;
+}
+.blog-read-more a {
+    text-decoration: underline;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/*================================
+  End Blog Area 
+==================================*/
+/*================================
+10. Brand      
+==================================*/ 
+.brand {
+    padding: 80px 0px !important;
+}
+.single-brand {
+    padding: 15px 0px;
+    width: 100%;
+}
+.single-partner img {
+    width: 80px !important;
+    height: 30px;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    margin: 0px auto;
+    display: block;
+}
+.single-brand img {
+    margin: 0px auto;
+    left: 0px;
+    top: 0px;
+    display: block;
+}
+/*================================
+  End Brand
+==================================*/
+/*================================
+11.Scroll to  top 
+==================================*/ 
+.scroll-to-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #f9690e;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    z-index: 99;
+    display: none;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+}
+.scroll-to-top i {
+    font-size: 36px;
+    color: #fff;
+}
+/*================================
+End Scroll to  top
+==================================*/
+/*================================
+12.Footer
+==================================*/ 
+.footer-area {
+    background: #000;
+    padding: 80px 0px;
+}
+.footer-area,
+.footer-area a {
+    color: #fff;
+}
+.footer-widget h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+.footer-widget h4::before {
+    content: "";
+    width: 80px;
+    height: 2px;
+    left: 0px;
+    bottom: -8px;
+    position: absolute;
+    background: #fff;
+}
+.social-links > a {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 12px;
+    padding-right: 10px;
+}
+.footer-widget ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.contact-info {
+    padding-left: 30px;
+    position: relative;
+}
+.contact-info i.fa {
+    left: 0;
+    position: absolute;
+    top: 6px;
+}
+.footer-subscription-form h4 {
+    text-transform: uppercase;
+}
+.footer-subscription-form {
+    margin-top: 30px;
+}
+.footer-subscription-form input[type="submit"] {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    color: #000;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 25%;
+}
+.footer-subscription-form input[type="email"] {
+    border: medium none;
+    color: #000;
+    padding: 10px;
+    width: 73%;
+}
+.footer-subscription-form form {
+    margin-bottom: 10px;
+}
+.footer-subscription-form p {
+    font-size: 90%;
+}
+.copyright-area,
+.copyright-area a {
+    color: #b5b5b5;
+}
+.copyright-area ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.copyright-area li {
+    display: inline-block;
+}
+.copyright-area li::after {
+    content: "|";
+    padding-left: 10px;
+    padding-right: 7px;
+}
+.copyright-area li:last-child::after {
+    display: none;
+}
+.copyright-area {
+    padding: 20px 0;
+}
+.no-pad {
+    padding: 0px;
+    color: #000;
+    text-align: center; 
+}
+.no-pad h6 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0px;
+}
+/*=========================
+  End Footer
+===========================*/

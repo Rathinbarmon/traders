@@ -1,0 +1,67 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+	 
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.ex-pad {
+    padding: 70px 0px !important;
+	} 
+.single-team-member{
+    margin-bottom: 20px;
+	}		
+.single-blog-content{
+    margin-bottom: 20px;
+	}	
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+.slider-table-cell h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+	} 
+.slider-table-cell h4 {
+    font-style: italic;
+    font-size: 16px;
+	}  
+.mobile-menu-area {
+    display: block !important;
+	}
+.second-image {
+    position: absolute;
+    bottom: -55px;
+    left: 65px;
+    padding: 0px 20px 0px 0px;
+	}
+.our-services-images {
+    padding-bottom: 30px;
+	} 
+.top-100 {
+    margin-top: 00px;
+	}	
+.single-team-member{
+    margin-bottom: 20px;
+	}		
+.single-blog-content{
+    margin-bottom: 20px;
+	}	 	
+.footer-area{ 
+    margin-bottom: 20px;
+	}	
+.ex-pad{
+	padding: 20px 20px;
+	}  
+.blog-sepecial-title {
+    padding-bottom: 20px;
+	}
+.rotate{ 
+    transform: rotate(0deg);  
+	margin-bottom:40px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {  
+.ex-pad{
+    padding: 30px 60px;
+	} 
+}
